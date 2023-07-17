@@ -1,0 +1,32 @@
+.tags {
+    .box-heading {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        @include title();
+    }
+
+    .box-content {
+        >* {
+            background: #F8F9FA;
+            border: 1px dashed #6C757D;
+            border-radius: 815px;
+            font-size: 14px;
+            font-weight: $font-weight-normal;
+            line-height: 20px;
+            padding: 6px 16px;
+            margin-left: 8;
+            margin-bottom: 8px;
+            display: inline-block;
+
+            &:first-child {
+                margin-left: 0;
+            }
+            &:hover{
+                border: 1px dashed #dc3545;
+            }
+
+        }
+    }
+}

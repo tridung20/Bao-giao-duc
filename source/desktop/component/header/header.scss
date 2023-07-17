@@ -1,0 +1,185 @@
+.site-header {
+    background: #fff;
+    z-index: 2;
+    position: relative;
+
+    .top-header {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        background-color: #126495;
+        max-width: 100%;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .left,
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            [class*="ic-"] {
+
+                &::before {
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+
+            >* {
+                font-size: 14px;
+                font-weight: $font-weight-normal;
+                line-height: 1.5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                gap: 3px;
+
+                >* {
+                    margin: auto;
+                }
+            }
+        }
+
+
+    }
+
+    .content-header {
+        padding: 20px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 150px;
+
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            >* {
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: 0;
+                // margin-left: 10px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            .zl {
+                background: #0068FF url(../img/icon/zalo2.png) center left 6px/24px no-repeat;
+            }
+
+            .fb {
+                background: #0076CF url(../img/icon/facebook2.png) center left 6px/24px no-repeat;
+            }
+
+            .tw {
+                background: #00ACEE url(../img/icon/twitter2.png) center left 6px/24px no-repeat;
+            }
+        }
+
+        .logo {
+            width: 230px;
+            height: 90px;
+            display: block;
+            margin: 0 auto;
+            background: url(../img/logo.png) center center/230px no-repeat;
+            font-size: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .box-icon {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            >* {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0;
+                background: #0068FF;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+
+            .icon-search {
+                background: transparent url(../img/search.png) center left 0px/24px no-repeat;
+            }
+
+            .icon-user {
+                background: transparent url(../img/user.png) center left 0px/24px no-repeat;
+            }
+
+            .icon-menu {
+                background: transparent url(../img/menu.png) center left 0px/24px no-repeat;
+            }
+        }
+    }
+
+    .navigation {
+        background: #fff;
+        width: 100%;
+        border-top: 1px solid #E9ECEF;
+        border-bottom: 1px solid #E9ECEF;
+
+
+        .menu {
+            margin: 20px auto;
+            max-width: 1170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >li {
+                position: relative;
+
+                >a {
+                    text-transform: uppercase;
+                    color: #343A40;
+                    font-size: 16px;
+                    font-family: $font-family-sans-serif;
+                    font-weight: $font-weight-bold;
+                    display: block;
+                    padding: 8px 5px;
+                    // position: relative;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+
+                    @media (min-width: $xl) {
+                        padding: 10px 15px;
+                    }
+
+                    &.active,
+                    &:hover {
+                        color: #ED1C24;
+                    }
+
+                }
+            }
+        }
+    }
+}

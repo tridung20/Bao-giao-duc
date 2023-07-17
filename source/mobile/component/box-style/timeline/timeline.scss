@@ -1,0 +1,45 @@
+.timeline {
+    .box-heading {
+        padding-bottom: 10px;
+    }
+
+    .title {
+        font-family: $font-family-branch;
+        font-weight: $font-weight-normal;
+        font-size: 25px;
+        line-height: 37px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .story {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #E9ECEF;
+
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+
+        &__thumb {
+            // width: 33%;
+            // height: 20vw;
+            // max-height: 112px;
+            float: left;
+            margin-right: 16px;
+            width: 150px;
+            height: 85px;
+            // min-height: 100px;
+        }
+
+        &__heading {
+            display: flex;
+        }
+
+        &__meta {
+            margin-left: 166px;
+        }
+    }
+}

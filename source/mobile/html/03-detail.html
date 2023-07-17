@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAOCAI</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/mobile.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+        <div class="container ">
+            <div id="adsMobile_AdsTop" class="banner" data-platform="1" data-position="Mobile_AdsTop" style="display: none;"></div>
+            @@include('../component/breadcrumbs/breadcrumbs.html')
+            <div class="article">
+                @@include('../component/detail-page/article-header/article-header.html')
+                @@include('../component/detail-page/article-body/article-body.html')
+            </div>
+            <div class="suggest">
+                <h3 class="box-heading">
+                    <a href="" class="title">tập tiếp theo</a>
+                </h3>
+                <div class="box-content">
+                    @@for (var i = 0; i < 4; i++) { <article class="story">
+                        <figure class="story__thumb">
+                            <a href="" title=""> <img src="https://source.unsplash.com/featured/300x170?sig=1" alt="300x170 (~16:9)"></a>
+                        </figure>
+                        <h5 class="story__heading">
+                            <a href="#">
+                                Official Gazette issues Nos 09-12/2022, available on April 28, 2022
+                            </a>
+                        </h5>
+                        </article>
+                        }
+                </div>
+            </div>
+            <div class="timeline">
+                <h3 class="box-heading">
+                    <a href="" class="title">tin cùng chuyên mục</a>
+                </h3>
+                <div class="box-content">
+                    @@for ( var i=0; i < 15; i++) { <article class="story">
+                        <figure class="story__thumb">
+                            <a href="#" title=""> <img src="https://source.unsplash.com/featured/150x85?sig=1" alt="150x85 (~16:9)"></a>
+                        </figure>
+                        <h5 class="story__heading">
+                            <a href="#">
+                                10 điều nên thử khi du lịch Đài Loan vào mùa đông
+                                <i class="ic-type-img"></i>
+                            </a>
+                        </h5>
+                        </article>
+                        }
+                </div>
+                <button class="more-news">
+                    xem thêm ...
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top"></div>
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAOCAI</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/mobile.css">
+</head>
+
+<body>
+    <!-- site header -->
+    <header class="site-header-emagazine">
+        <a href="index.html" class="back">
+            <i class="ic-reply"></i> Quay về
+        </a>
+        <p class="text">emagazine</p>
+    </header>
+
+    <!-- site body -->
+    <div class="site-body">
+        <div class="container longform">
+            <div class="article">
+                <table class="picture full-width">
+                    <tbody>
+                        <tr>
+                            <td class="img">
+                                <img src="https://source.unsplash.com/featured/3000x900?sig=1" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="caption">Khói bốc lên từ khu công nghiệp Kaesong, được cho là hệ quả khi Triều
+                                Tiên cho nổ
+                                văn phòng liên lạc liên Triều. Ảnh: NK News.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                @@include('../component/breadcrumbs/breadcrumbs.html')
+                @@include('../component/detail-page/article-header/article-header.html')
+                @@include('../component/detail-page/article-body/article-body.html')
+            </div>
+        </div>
+    </div>
+
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

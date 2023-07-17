@@ -1,0 +1,262 @@
+.auto-update-content {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #055160;
+    background: #cff4fc;
+    height: 50px;
+    border: 1px solid #9eeaf9;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.live-zone {
+    position: relative;
+    width: 100%;
+
+    .sticky-notification {
+        >* {
+            margin-top: 16px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        margin-bottom: 16px;
+        padding: 20px;
+        background: rgba(255, 193, 7, 0.2);
+        border: 1px dashed #FFDA6A;
+        border-radius: 6px;
+
+        .heading {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+
+        }
+
+        .text {
+            background: transparent;
+            padding: 0;
+        }
+
+        .content {
+            >* {
+                margin-top: 16px !important;
+
+                &:first-child {
+                    margin-top: 0 !important;
+                }
+            }
+        }
+    }
+
+    .wrap-item {
+        >* {
+            margin-top: 16px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .item {
+
+        >* {
+            margin-top: 12px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            >* {
+                margin-top: 12px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .time {
+            font-family: "Quicksand";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #bd1723;
+        }
+
+        .heading {
+            font-weight: $font-weight-medium;
+            font-size: 19px;
+            line-height: 30px;
+        }
+
+        .content {
+            >* {
+                margin-top: 12px !important;
+                font-size: 19px;
+                line-height: 28px;
+
+
+                &:first-child {
+                    margin-top: 0 !important;
+                }
+            }
+        }
+
+        .meta {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: #FFC107;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 0;
+            }
+
+            time {
+                font-family: $font-family-branch;
+                font-size: 14px;
+                line-height: 21px;
+                color: #212529;
+                display: block;
+                position: relative;
+                z-index: 1;
+                width: fit-content;
+                background: #fff;
+                padding: 0 16px;
+                margin-left: 81px;
+            }
+
+            i {
+                display: none;
+            }
+        }
+    }
+
+    .list-icon {
+        width: 540px;
+        margin-left: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin-top: 12px;
+
+            [class^="ic-"] {
+                width: 48px;
+                height: 48px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        .text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 27px;
+            color: #000;
+            text-transform: capitalize;
+            display: block;
+        }
+
+        // icon live
+        .ic-report {
+            background: url("../img/icon-report.png") center center/48px no-repeat;
+        }
+
+        .ic-mobile {
+            background: url("../img/icon-mobile.png") center center/48px no-repeat;
+        }
+
+        .ic-qoute {
+            background: url("../img/icon-qoute.png") center center/48px no-repeat;
+        }
+
+        .ic-facebook {
+            background: url("../img/icon-facebook.png") center center/48px no-repeat;
+        }
+
+        .ic-twitter {
+            background: url("../img/icon-twitter.png") center center/48px no-repeat;
+        }
+
+        .ic-mail {
+            background: url("../img/icon-mail.png") center center/48px no-repeat;
+        }
+
+        .ic-video-live {
+            background: url("../img/icon-video-live.png") center center/48px no-repeat;
+        }
+
+        .ic-photo {
+            background: url("../img/icon-photo.png") center center/48px no-repeat;
+        }
+
+        .ic-goal {
+            background: url("../img/icon-goal.png") center center/48px no-repeat;
+        }
+
+        .ic-conner {
+            background: url("../img/icon-conner.png") center center/48px no-repeat;
+        }
+
+        .ic-yellow {
+            background: url("../img/icon-yellow.png") center center/48px no-repeat;
+        }
+
+        .ic-red {
+            background: url("../img/icon-red.png") center center/48px no-repeat;
+        }
+
+        .ic-substitute {
+            background: url("../img/icon-substitute.png") center center/48px no-repeat;
+        }
+
+        .ic-start {
+            background: url("../img/icon-start.png") center center/48px no-repeat;
+        }
+
+        .ic-tatic {
+            background: url("../img/icon-tatic.png") center center/48px no-repeat;
+        }
+
+        .ic-stadium {
+            background: url("../img/icon-stadium.png") center center/48px no-repeat;
+        }
+
+        .ic-time-live {
+            background: url("../img/icon-time-live.png") center center/48px no-repeat;
+        }
+
+        .ic-fault {
+            background: url("../img/icon-fault.png") center center/48px no-repeat;
+        }
+
+        .ic-jnjure {
+            background: url("../img/icon-jnjure.png") center center/48px no-repeat;
+        }
+
+        .ic-penalty {
+            background: url("../img/icon-penalty.png") center center/48px no-repeat;
+        }
+    }
+
+}

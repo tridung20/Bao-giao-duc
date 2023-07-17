@@ -1,0 +1,476 @@
+@keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@mixin audio-player {
+    position: relative;
+    transition: all .15s linear;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .play-button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        >span {
+            background-color: rgba(255, 255, 255, .9);
+            border: 1px solid rgba(0, 0, 0, .3);
+            display: block;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        i {
+            font-size: 12px;
+            color: #495057;
+        }
+
+
+        &:hover {
+
+            i {
+                color: #212529
+            }
+        }
+
+        &+span {
+            display: flex;
+        }
+    }
+
+    .mute-wrap {
+
+        &:hover {
+            .volume-slider {
+                width: 62px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .mute-button {
+        padding: 0 16px 0 8px;
+        min-width: 50px;
+
+        i {
+            color: #495057;
+        }
+
+        &:hover {
+            i {
+                color: #212529;
+            }
+        }
+    }
+
+    .volume-slider {
+        width: 0px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        margin-right: 0px;
+        cursor: pointer;
+        transition: all .15s linear;
+
+        .volume-slider-handle {
+            position: absolute;
+            top: 50%;
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            margin-top: -6px;
+            background-color: #6c757d;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 50%;
+                height: 3px;
+                margin-top: -2px;
+                width: 64px;
+            }
+
+            &:before {
+                left: -64px;
+                background-color: #6c757d
+            }
+
+            &:after {
+                left: 12px;
+                background-color: rgba(0, 0, 0, .1)
+            }
+        }
+
+        &.is-active {
+            margin-right: 10px;
+            width: 62px;
+        }
+    }
+
+    .time-display {
+        width: 75px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        color: #495057;
+        opacity: 1;
+        transition: all .2s linear;
+
+        .current {
+            width: 30px;
+        }
+
+        .separator {
+            margin-left: 3px;
+        }
+    }
+
+    .progress-bar {
+        position: relative;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        transition: all .2s linear;
+
+        .bg {
+            position: absolute;
+            display: flex;
+            height: 0;
+            top: 0;
+            width: 100%;
+            transition: all .15s linear;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+
+            @media (min-width:576px) {
+                border-top-width: 3px;
+            }
+        }
+
+        .fill-recent {
+            position: absolute;
+            display: flex;
+            height: 0px;
+            top: 0;
+            left: 0;
+            border-top-width: 1px;
+            border-top-style: solid;
+            font-size: 0;
+            cursor: pointer;
+            transition: all .15s linear;
+
+            @media (min-width:576px) {
+                border-top-width: 3px;
+            }
+        }
+
+        .current_time {
+            position: absolute;
+            right: -7px;
+            top: -5px;
+            width: 7px;
+            height: 7px;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-indent: -999em;
+            transition: all .15s linear;
+            background-color: #fff;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .4)
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .select-voice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        span {
+            color: #495057;
+        }
+
+        i {
+            color: #495057;
+        }
+
+        &:after {
+            position: absolute;
+            top: 10px;
+            right: 8px;
+            opacity: .4;
+        }
+
+        &:hover {
+            border: 1px solid rgba(0, 0, 0, .3);
+        }
+    }
+}
+
+
+
+
+// icomoon 
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/audio/icomoon.eot?9yo1tm');
+    src: url('../fonts/audio/icomoon.eot?9yo1tm#iefix') format('embedded-opentype'),
+        url('../fonts/audio/icomoon.ttf?9yo1tm') format('truetype'),
+        url('../fonts/audio/icomoon.woff?9yo1tm') format('woff'),
+        url('../fonts/audio/icomoon.svg?9yo1tm#bm-player') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="ic-audio-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &::before {
+        font-size: 16px;
+    }
+}
+
+
+.ic-audio-waveform:before {
+    content: "\1f550";
+}
+
+.ic-audio-microphone:before {
+    content: "\1f551";
+}
+
+.ic-audio-volume:before {
+    content: "\1f552";
+}
+
+.ic-audio-volume-slash:before {
+    content: "\1f553";
+}
+
+.ic-audio-pause:before {
+    content: "\1f554";
+    font-size: 13px;
+}
+
+.ic-audio-play:before {
+    content: "\1f555";
+}
+
+
+// > bm-player
+.audio {
+    @include audio-player;
+    height: 60px;
+    font-size: 0;
+    background-color: #F7F7F7;
+    border: 1px solid #DEE2E6;
+    padding-left: 16px;
+
+    .play-button {
+        min-width: 36px;
+        height: 100%;
+        // padding-left: 16px;
+        padding-right: 0;
+        font-size: 14px;
+
+        >span {
+            box-sizing: border-box;
+            width: 36px;
+            height: 36px;
+        }
+
+        .ic-tts-play {
+            margin-left: 3px;
+        }
+    }
+
+    .time-display {
+        width: 75px;
+    }
+
+    .progress-bar {
+        position: relative;
+        margin-left: 16px;
+        margin-right: 16px;
+        height: 100%;
+        display: none;
+
+        @media (min-width: 1366px) {
+            display: block;
+        }
+
+        .fill-recent {
+            border-color: #28a5fa;
+        }
+
+        .bg,
+        .fill-recent {
+            top: 29px;
+        }
+    }
+
+    .mute-button {
+        i {
+            font-size: 18px;
+        }
+    }
+
+    .right {
+        padding-right: 16px;
+    }
+
+    .select-voice {
+        width: inherit;
+        height: 34px;
+        padding: 0 8px;
+
+        @media (min-width: 1366px) {
+            padding: 0 13px;
+        }
+
+        span {
+            font-size: 12px;
+
+            @media (min-width: 360px) {
+                font-size: 15px;
+            }
+        }
+
+        i {
+            margin-right: 10px;
+            font-size: 16px;
+            display: none;
+
+            @media (min-width: 360px) {
+                display: block;
+            }
+        }
+
+        &:after {
+            top: 14px;
+        }
+    }
+
+    .voice-board {
+        width: 180px;
+        right: 0;
+        margin-top: 5px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        position: absolute;
+        border: 1px solid #dee2e6;
+        padding: 0;
+        top: 50px;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        font-weight: 400;
+        z-index: 9;
+        background: #fff;
+        display: none;
+
+        li {
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            border-top: 1px solid #E9ECEF;
+            cursor: pointer;
+            font-size: 14px;
+
+            i {
+                margin-right: 6px;
+                font-size: 12px;
+                display: inline-block;
+            }
+
+            &:first-child {
+                border-top: none;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+
+            &:hover,
+            &.is-active {
+                background-color: #EDEDED;
+
+                i,
+                span {
+                    color: #e21f26;
+                }
+            }
+        }
+
+        &:before,
+        &:after {
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        &::before {
+            border-color: transparent;
+            border-bottom-color: #ced4da;
+            border-width: 6px;
+            margin-right: -1px;
+        }
+
+        &::after {
+            border-color: rgba(255, 255, 255, 0);
+            border-bottom-color: #fff;
+            border-width: 5px;
+            margin-left: 1px;
+        }
+
+        &.show {
+            display: block;
+        }
+    }
+}

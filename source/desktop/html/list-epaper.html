@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GIAODUC</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+        <div class="container ">
+            <div class="breadcrumbs style1">
+                <h2 class="main"><a href="">Chính trị-thời sự</a></h2>
+                <h1 class="main"><a class="active" href="">Đại hội Đảng bộ tỉnh lần thứ XVI</a></h1>
+                <div class="sub">
+                    <a href="#" class="active"><h1> Văn bản mới</h1></a>
+                    <a href="#" class=""><h2>Giải Búa liềm vàng</h2></a>
+                    <a href="#" class=""><h3>Đại hội Đảng bộ tỉnh lần thứ XVI</h3></a>
+                </div>
+            </div>
+            <div class="list-epaper">
+                <div class="box-content">
+                    @@for (var i = 0; i < 20; i++) { 
+                        <article class="story">
+                            <figure class="story__thumb">
+                                <a href="" title=""> <img src="https://source.unsplash.com/featured/270x390?sig=1"
+                                        alt="270x390 (2x3)"></a>
+                            </figure>
+                            <h5 class="story__heading">
+                                <a href="#">
+                                    BÁO Lào Cai SỐ 24592
+                                </a>
+                            </h5>
+                            <div class="story__meta">
+                                <span class="time">Ngày 04-03-2023</span>
+                            </div>
+                        </article>
+                    }
+                </div>
+                <button class="more-news">
+                    xem thêm ...
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

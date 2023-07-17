@@ -1,0 +1,114 @@
+.title {
+    display: block;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.story {
+    @include clearfix;
+    
+    figure {
+        margin: 0;
+    }
+
+    &__thumb {
+        // border-radius: 6px;
+        overflow: hidden;
+        background: #ddd;
+
+        a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease-out 0.1s;
+            transition: 0.5s;
+        }
+
+        img {
+            width: 100%;
+            transition: transform 0.5s;
+            text-indent: -9999px;
+        }
+    }
+
+    &__heading a {
+        display: block;
+        transition: 0.5s;
+        overflow: hidden;
+        font-family: $font-family-branch;
+        font-weight: $font-weight-bold;
+
+        &:hover {
+            color: $secondary !important;
+        }
+
+        i {
+            font-size: inherit;
+
+            &::before {
+                font-size: inherit;
+            }
+        }
+    }
+
+    &__summary {
+        font-size: 14px;
+        font-weight: $font-weight-normal;
+        color: #6c757d;
+        display: block;
+        overflow: hidden;
+        margin-bottom: 0;
+
+        >* {
+            font-size: 14px;
+            font-weight: $font-weight-normal;
+            color: #6c757d;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+
+        b{
+            font-weight: $font-weight-normal !important;
+        }
+    }
+
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        
+        .time {
+            display: block;
+            font-weight: $font-weight-normal;
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--gray-500);
+        }
+
+        .vertical-line {
+            width: 1px;
+            height: 16px;
+            background-color: $text;
+        }
+
+        .title-cate {
+            display: block;
+            font-weight: $font-weight-medium;
+            font-size: 13px;
+            text-transform: uppercase;
+            line-height: 1.5;
+            color: $secondary;
+
+        }
+    }
+
+    &__sub-heading a {
+        &:hover {
+            color: $primary !important;
+        }
+    }
+}

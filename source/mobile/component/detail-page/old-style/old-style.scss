@@ -1,0 +1,155 @@
+.picture {
+    tr {
+        &:nth-child(even) {
+
+            >* {
+                font-size: 16px;
+                line-height: 21px;
+                color: #6c757d;
+                text-align: center;
+                margin-top: 8px;
+                display: block;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            span,
+            em {
+                font-size: 14px;
+                line-height: 21px;
+                color: #6c757d;
+                text-align: center;
+                margin-top: 8px;
+                display: block;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+
+        &:nth-child(odd) {
+            margin-top: 16px;
+            display: block;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+table {
+    ol {
+        margin-top: 10px;
+
+        li {
+            margin-top: 5px;
+            font-size: 16px;
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 5px;
+                height: 5px;
+                background: #ccc;
+                border-radius: 50%;
+                left: 0;
+                top: 10px;
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+figcaption {
+
+    em,
+    span {
+        font-size: 16px;
+        line-height: 21px;
+        color: #6c757d;
+        text-align: center;
+        margin-top: 8px !important;
+        display: block;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+figure.audio {
+    padding-left: 0;
+    height: auto;
+    background: transparent;
+    border: none;
+    display: block;
+
+    audio {
+        width: 100%;
+    }
+}
+
+table.audio {
+    padding-left: 0;
+    height: auto;
+    background: transparent;
+    border: none;
+
+    tbody,
+    tr,
+    td,
+    audio {
+        display: block;
+        width: 100%;
+    }
+}
+
+.article__relate {
+    overflow: auto;
+
+    &__thumb {
+        float: left;
+        margin: 0 16px 0 0 !important;
+        width: 150px !important;
+        height: 100px !important;
+
+    }
+
+    &__heading a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #212529;
+    }
+}
+
+.zce-content-body {
+    em {
+        span {
+            display: inline;
+        }
+    }
+
+    figcaption {
+        p {
+            margin-top: 8px;
+        }
+    }
+
+}
+
+table.Table {
+    &[align="center"] {
+        margin-left: 0 !important;
+
+        td,
+        th {
+            padding: 5px !important;
+            border: 1px solid #e9ecef !important;
+            display: table-cell;
+        }
+    }
+}

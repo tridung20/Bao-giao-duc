@@ -1,0 +1,303 @@
+// ----------------------------------
+// INFO : style global
+// ----------------------------------
+.d-flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    color: $secondary;
+}
+
+.back-to-top {
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    width: 40px;
+    background: $secondary;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    background: url(../img/back-to-top.png) center center no-repeat;
+    z-index: 1;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.site-body {
+    >.social {
+        position: fixed;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 8px;
+        z-index: 1;
+        border-radius: 4px;
+
+        >* {
+            display: block;
+            margin: 0 auto;
+            font-size: 0;
+            width: 50px;
+            height: 50px;
+
+            &:first-child {
+                border-radius: 4px 4px 0 0;
+            }
+
+            &:last-child {
+                border-radius: 0 0 4px 4px;
+            }
+        }
+
+        .fb {
+            background: #1B74E4 url(../img/fb.png) center center/15px no-repeat;
+        }
+
+        // .yt {
+        //     background: #F43443 url(../img/yt.png?v2) center center/27px no-repeat;
+        // }
+
+        .zl {
+            background: #0068FF url(../img/zalo.png) center center/35px no-repeat;
+        }
+
+        .tw {
+            background: #60D2F5 url(../img/tw.png) center center/24px no-repeat;
+        }
+    }
+}
+
+.category {
+    .abf-cate {
+        padding-bottom: 70px;
+        background: url(../img/top-decor.png) center bottom/1170px no-repeat;
+    }
+}
+
+.box-heading {
+    .title {
+        transition: all 0.3s;
+
+        &:hover {
+            color: $primary !important;
+        }
+    }
+}
+
+.more-news {
+    display: flex;
+    // border: 4px solid none;
+    background: $secondary;
+    border-radius: 4px;
+    padding: 12px 40px;
+    font-weight: $font-weight-bold;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 auto;
+    margin-top: 30px
+}
+
+.podcast {
+
+    .wrap-comment,
+    .article__tags {
+        width: 810px;
+        margin: 40px auto 0;
+    }
+}
+
+.detail {
+    .breadcrumbs+.col {
+        margin-top: 0px;
+    }
+}
+
+// location
+.location {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+        width: calc(25% - 29px);
+        background: rgba(226, 31, 38, .05);
+        border: 1px solid rgba(226, 31, 38, .2);
+        box-sizing: border-box;
+        border-radius: 99px;
+        min-height: 50px;
+        padding: 13px 12px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 26px;
+        color: #e21f26;
+        margin-right: 29px;
+        margin-top: 16px;
+        transition: .5s;
+
+        &:nth-child(-n+4) {
+            margin-top: 0;
+        }
+
+        &:hover {
+            background: #fff;
+        }
+    }
+
+    .ic-location {
+        &::before {
+            font-size: 28px;
+            margin-right: 4px;
+        }
+    }
+}
+
+// list-epaper
+.list-epaper {
+    .box-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--column-gap);
+    }
+
+    .story {
+        position: relative;
+        transition: all 0.5s;
+
+        &__thumb {
+            position: relative;
+            width: 100%;
+            height: 390px;
+            border-radius: 6px;
+
+            a {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+                }
+            }
+
+        }
+
+        &__heading {
+            position: absolute;
+            bottom: 52px;
+            padding: 0 16px;
+            width: 100%;
+
+            a {
+                font-size: 16px;
+                text-transform: uppercase;
+                line-height: 23px;
+                color: #FFFFFF;
+                font-weight: $font-weight-medium;
+            }
+        }
+
+        &__meta {
+            position: absolute;
+            bottom: 20px;
+            padding: 0 16px;
+
+            .time {
+                font-weight: $font-weight-medium;
+                font-size: 13px;
+                line-height: 24px;
+                color: #ADB5BD;
+                display: block;
+            }
+        }
+    }
+}
+
+.detail-epaper {
+    margin-top: 70px !important;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.vertical-line_cate {
+    width: 4px;
+    height: 32px;
+    align-self: baseline;
+    background-color: $primary;
+}
+
+.site-header-extend {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.20);
+
+    .back {
+        width: 36px;
+        height: 36px;
+        background: url(../img/arrow-left.png) center center no-repeat;
+        font-size: 0;
+    }
+
+    .e-magazine {
+        width: 180px;
+        height: 48px;
+        background: url(../img/eMagazine.png) center center no-repeat;
+        font-size: 0;
+    }
+
+    .social {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        >* {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        .zl {
+            background: #0068FF url(../img/icon/zalo2.png) center left 6px/24px no-repeat;
+        }
+
+        .fb {
+            background: #0076CF url(../img/icon/facebook2.png) center left 6px/24px no-repeat;
+        }
+
+        .tw {
+            background: #00ACEE url(../img/icon/twitter2.png) center left 6px/24px no-repeat;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAOCAI</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/mobile.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+    <!-- site body -->
+    <div class="site-body">
+        <div class="container">
+            @@include('../component/breadcrumbs/breadcrumbs.html')
+            <div class="list-epaper">
+                <div class="box-content">
+                  @@for (var i = 0; i < 5; i++) {
+                      <article class="story">
+                        <figure class="story__thumb">
+                          <a href="" title="">
+                            <img src="https://source.unsplash.com/featured/245x365?sig=1" alt="245x365 (~2:3)">
+                          </a>
+                        </figure>
+                        <h5 class="story__heading">
+                          <a href="#">
+                            BÁO Lào Cai SỐ 24592
+                          </a>
+                        </h5>
+                        <div class="story__meta">
+                          <time class="time">Ngày 04-03-2023</time>
+                        </div>
+                      </article>
+                  }
+                </div>
+                <button class="more-news">
+                  xem thêm ...
+                </button>
+              </div>
+        </div>
+    </div>
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

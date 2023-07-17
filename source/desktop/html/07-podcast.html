@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GIAODUC</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<body>
+    <!-- site header -->
+    @@include('../component/header/header.html')
+
+    <!-- site body -->
+    <div class="site-body">
+        <div class="social">
+            <a href="" class="fb">fb</a>
+            <a href="" class="yt">yt</a>
+            <a href="" class="zl">zl</a>
+            <a href="" class="tw">tw</a>
+        </div>
+        <div class="container podcast">
+            @@include('../component/breadcrumbs/breadcrumbs.html')
+            @@include('../component/podcast/podcast.html')
+            @@include('../component/detail-page/article-body/content-body/_tags.html')
+            @@include('../component/detail-page/comment/comment.html')
+            @@include('../component/box-style/suggest/suggest.html')
+            @@include('../component/box-style/suggest/suggest.html')
+        </div>
+    </div>
+    <!-- site footer -->
+    @@include('../component/footer/footer.html')
+
+    <!-- JS Global Compulsory-->
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+</body>

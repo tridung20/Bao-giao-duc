@@ -1,0 +1,108 @@
+.article {
+    >* {
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__sub-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #343a40;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: $font-family-branch;
+        font-weight: $font-weight-bold;
+        font-size: 36px;
+        line-height: 48px;
+        color: #212529;
+    }
+
+    &__meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .row {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+
+            >* {
+                align-items: center;
+                font-size: 14px;
+                font-family: $font-family-sans-serif;
+                font-weight: $font-weight-medium;
+                line-height: 1.5;
+                color: var(--gray-500);
+
+                &:nth-child(2) {
+                    font-size: 16px;
+                    font-weight: $font-weight-semibold;
+                    color: $secondary;
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            >* {
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: 0;
+
+                &:first-child {
+                    border: 1px solid #0068FF;
+                }
+
+                &:nth-child(2) {
+                    border: 1px solid #0073CF;
+                }
+
+                &:nth-child(3) {
+                    border: 1px solid #00ACEE;
+                }
+                
+                &:last-child {
+                    border: 1px solid #126495;
+                }
+            }
+
+            .zl {
+                background: transparent url(../img/icon/zalo.png) center left 5px/24px no-repeat;
+            }
+
+            .fb {
+                background: transparent url(../img/icon/facebook.png) center left 5px/24px no-repeat;
+            }
+
+            .tw {
+                background: transparent url(../img/icon/twitter.png) center left 5px/24px no-repeat;
+            }
+            
+            .link {
+                background: transparent url(../img/icon/Link.png) center left 5px/24px no-repeat;
+            }
+        }
+    }
+
+    &__sapo {
+        font-size: 18px;
+        font-weight: $font-weight-bold;
+        font-style: italic;
+        color: $text;
+        line-height: 1.5;
+    }
+
+}

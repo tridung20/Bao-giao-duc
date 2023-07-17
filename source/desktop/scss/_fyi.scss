@@ -1,0 +1,41 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner_show:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.fyi-position {
+    margin-bottom: 24px;
+
+    &+div {
+        margin-bottom: 24px;
+    }
+}
+
+.banner-wrap {
+    margin-bottom: 20px !important;
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        flex-direction: initial;
+        min-height: 90px;
+        gap: 20px;
+
+        .banner_show {
+            margin-bottom: 0;
+        }
+    }
+}

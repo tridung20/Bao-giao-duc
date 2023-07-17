@@ -1,0 +1,39 @@
+.multi-pack {
+    display: flex;
+    flex-wrap: wrap;
+
+    >* {
+        margin-top: 40px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .top {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--column-gap);
+
+        .story:first-child {
+            .story__thumb {
+                width: 100%;
+                height: 210px;
+            }
+
+            .story__heading a {
+                font-size: 22px;
+                font-weight: $font-weight-bold;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--column-gap);
+
+    }
+
+}

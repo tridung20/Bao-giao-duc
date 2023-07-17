@@ -1,0 +1,22 @@
+.link {
+    .box-heading {
+        margin-bottom: 10px;
+    }
+
+    .title {
+        @include title();
+    }
+
+    select {
+        border: 1px solid #DEE2E6;
+        border-radius: 6px;
+        height: 55px;
+        width: 100%;
+        padding: 5px 20px;
+        appearance: none;
+        background: url(../img/arrow-down.png) center right 20px no-repeat;
+        font-size: 16px;
+        font-weight: $font-weight-normal;
+    }
+
+}

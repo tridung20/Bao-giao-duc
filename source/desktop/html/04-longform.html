@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GIAODUC</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://static-cms-common.zadn.vn/content-body/styles/css/laocai.css?v=1.7"> -->
+
+</head>
+
+<body>
+  <!-- site header -->
+  <header class="site-header-extend">
+    <a href="index.html" class="back">back</a>
+    <a href="04-longform.html" class="e-magazine">logo</a>
+    <div class="social">
+      <a href="#" class="zl">zl</a>
+      <a href="#" class="fb">fb</a>
+      <a href="#" class="tw">tw</a>
+    </div>
+  </header>
+
+  <!-- site body -->
+  <div class="site-body">
+    <div class="container longform">
+      <div class="article">
+        <figure class="max-width">
+          <img src="https://source.unsplash.com/featured/1400x394?sig=1" alt="">
+          <figcaption>caption</figcaption>
+        </figure>
+        <table class="picture full-width">
+          <tbody>
+            <tr>
+              <td class="img">
+                <img src="https://source.unsplash.com/featured/3000x900?sig=1" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td class="caption">Khói bốc lên từ khu công nghiệp Kaesong, được cho là hệ quả khi Triều
+                Tiên cho nổ
+                văn phòng liên lạc liên Triều. Ảnh: NK News.</td>
+            </tr>
+          </tbody>
+        </table>
+        @@include('../component/breadcrumbs/breadcrumbs.html')
+        @@include('../component/detail-page/article-header/article-header.html')
+        @@include('../component/detail-page/article-body/article-body.html')
+      </div>
+    </div>
+    <div class="container">
+      @@include('../component/box-style/suggest/suggest.html')
+      <!-- <div class="col">
+        <div class="main-col">
+          <div class="timeline">
+            <h3 class="box-heading">
+              <a href="" class="title">tin cùng chuyên mục</a>
+            </h3>
+            <div class="box-content">
+              @@for ( var i=0; i < 5; i++) { <article class="story">
+                <figure class="story__thumb">
+                  <a href="#" title=""> <img src="https://source.unsplash.com/featured/330x220?sig=1"
+                      alt="330x220 (3x2)"></a>
+                </figure>
+                <h5 class="story__heading">
+                  <a href="#">
+                    10 điều nên thử khi du lịch Đài Loan vào mùa đông
+                    <i class="ic-type-img"></i>
+                  </a>
+                </h5>
+                <div class="story__summary">
+                  Đối với Liverpool, chiến thắng 7-0 trước đại kình địch là giấc mơ điên rồ nhất. Đối với Man.United,
+                  đây
+                  thực
+                  sự là cơn ác mộng tồi tệ nhất trong mùa giải đầu tiên đầy hứa hẹn dưới sự dẫn dắt của HLV Erik ten
+                  Hag.
+                </div>
+                </article>
+                }
+            </div>
+          </div>
+        </div>
+        <div class="sub-col">
+          <div class="banner">
+            <div class="banner_show">
+              <img src="https://source.unsplash.com/featured/300x900?sig=1" alt="">
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- site footer -->
+  @@include('../component/footer/footer.html')
+
+  <!-- JS Global Compulsory-->
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/ui.js"></script>
+</body>

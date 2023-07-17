@@ -1,0 +1,39 @@
+
+
+// Mulish : regular, medium, semibold, bold
+@font-face {
+    font-family: "Mulish";
+    src: url("/source/desktop/fonts/Mulish/Mulish-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("/source/desktop/fonts/Mulish/Mulish-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("/source/desktop/fonts/Mulish/Mulish-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("/source/desktop/fonts/Mulish/Mulish-Regular.ttf");
+    font-weight: 400;
+}
+
+// NotoSerif : bold
+@font-face {
+    font-family: "NotoSerif";
+    src: url("/source/desktop/fonts/Noto/NotoSerif-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "NotoSerif";
+    src: url("/source/desktop/fonts/Noto/NotoSerif-Regular.ttf");
+    font-weight: 400;
+}

@@ -1,0 +1,43 @@
+body {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 16px;
+}
+
+.site-body {
+    margin-top: 0px;
+
+    >* {
+        margin-top: 20px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .container {
+        >* {
+            margin-top: 30px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// layout detail-page
+.col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header-emagazine + .site-body{
+    margin-top: 65px;
+}

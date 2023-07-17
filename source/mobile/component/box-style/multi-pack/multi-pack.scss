@@ -1,0 +1,43 @@
+.multi-pack {
+    .title {
+        font-family: $font-family-branch;
+        font-weight: $font-weight-normal;
+        font-size: 25px;
+        line-height: 37px;
+        text-transform: uppercase;
+    }
+
+    .box-content {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .story {
+        margin-right: 16px;
+        margin-top: 16px;
+
+        &:nth-child(2n+2) {
+            margin-right: 0;
+        }
+
+        &:nth-child(-n+2) {
+            margin-top: 0;
+        }
+
+        width: calc(50% - 9px);
+
+        &__thumb {
+            width: 162px;
+            height: 162px;
+        }
+
+        &__heading a {
+            font-size: 20px;
+            line-height: 29px;
+            padding-top: 8px;
+            color: #343A40;
+        }
+
+    }
+}

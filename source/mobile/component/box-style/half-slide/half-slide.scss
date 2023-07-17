@@ -1,0 +1,40 @@
+.half-slide {
+    .title {
+        font-weight: $font-weight-normal;
+        font-size: 25px;
+        line-height: 37px;
+        font-family: $font-family-branch;
+        text-transform: uppercase;
+        color: #000000;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    .box-content {
+        margin-top: 16px;
+    }
+
+    .story {
+        width: 270px;
+        margin-right: 12px;
+
+        &__thumb {
+            width: 100%;
+            height: 180px;
+        }
+
+        &__heading a {
+            padding-top: 8px;
+            font-size: 17px;
+            line-height: 25px;
+            color: #343A40;
+        }
+
+    }
+
+    .slick-list {
+        padding-right: calc(100% - 282px) !important;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GIAODUC</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://static-cms-common.zadn.vn/content-body/styles/css/laocai.css?v=1.7"> -->
+</head>
+
+<body>
+  <!-- site header -->
+  <header class="site-header ">
+    <div class="top-header">
+      <div class="container" style=" display: flex; justify-content: space-between;">
+        <div class="left">
+          <a href=""> Thứ sáu, 30/06/2023</a>
+          <a href=""> Thông tin tòa soạn</a>
+        </div>
+        <div class="right">
+          <a href=""><i class="ic-smartphone"></i> Đường dây nóng: 0987.654.321</a>
+          <a href=""><i class="ic-mail"></i> toasoan@giaoduc.net.vn</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-header">
+        <div class="social">
+          <a href="#" class="zl">
+            <i"></i> zl
+          </a>
+          <a href="#" class="fb">
+            <i"></i> fb
+          </a>
+          <a href="#" class="tw">
+            <i"></i> tw
+          </a>
+        </div>
+        <a href="index.html" class="logo">logo</a>
+        <div class="box-icon">
+          <a href="#" class="icon-search">search</a>
+          <a href="#" class="icon-user">user</a>
+          <a href="#" class="icon-menu">menu</a>
+        </div>
+      </div>
+      <div class="navigation sticky">
+        <ul class="menu">
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="" class="active">Giáo dục 24h</a></li>
+          <li><a href="">Tiêu điểm</a></li>
+          <li><a href="">Góc nhìn</a></li>
+          <li><a href="">Du học</a></li>
+          <li><a href="">Sức khỏe học đường</a></li>
+          <li><a href="">Văn hóa</a></li>
+          <li><a href="">Kinh tế</a></li>
+          <li><a href="">Multimedia</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- site body -->
+  <div class="site-body">
+    <div class="container detail">
+      @@include('../component/breadcrumbs/breadcrumbs.html')
+      <div class="col">
+        <div class="main-col">
+          <div class="article">
+            @@include('../component/detail-page/article-header/article-header.html')
+            @@include('../component/detail-page/article-body/article-body.html')
+          </div>
+        </div>
+        <div class="sub-col">
+          <div class="banner">
+            <div class="banner_show">
+              <img src="https://source.unsplash.com/featured/300x250?sig=1" alt="">
+            </div>
+          </div>
+          @@include('../component/box-style/hot-news/hot-news.html')
+          @@include('../component/box-style/hot-topics/hot-topics.html')
+          <!-- <div class="banner">
+            <div class="banner_show">
+              <img src="https://source.unsplash.com/featured/300x200?sig=2" alt="">
+            </div>
+          </div> -->
+          @@include('../component/box-style/box-default/box-default.html')
+          @@include('../component/box-style/box-default/box-default.html')
+          @@include('../component/box-style/box-default/box-default.html')
+          @@include('../component/box-style/box-default/box-default.html')
+          @@include('../component/box-style/box-default/box-default.html')
+          <div class="banner">
+            <div class="banner_show">
+              <img src="https://source.unsplash.com/featured/300x250?sig=3" alt="">
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner_show">
+              <img src="https://source.unsplash.com/featured/300x250?sig=5" alt="">
+            </div>
+          </div>
+        </div>
+        @@include('../component/box-style/suggest/suggest.html')
+      </div>
+      <!-- <div class="col">
+        <div class="main-col">
+          <div class="timeline">
+            <h3 class="box-heading">
+              <a href="" class="title">tin cùng chuyên mục</a>
+            </h3>
+            <div class="box-content">
+              @@for ( var i=0; i < 5; i++) { <article class="story">
+                <figure class="story__thumb">
+                  <a href="#" title=""> <img src="https://source.unsplash.com/featured/330x185?sig=1"
+                      alt="330x185 (~16:9)"></a>
+                </figure>
+                <h5 class="story__heading">
+                  <a href="#">
+                    10 điều nên thử khi du lịch Đài Loan vào mùa đông
+                    <i class="ic-type-img"></i>
+                  </a>
+                </h5>
+                <div class="story__summary">
+                  Đối với Liverpool, chiến thắng 7-0 trước đại kình địch là giấc mơ điên rồ nhất. Đối với Man.United,
+                  đây
+                  thực
+                  sự là cơn ác mộng tồi tệ nhất trong mùa giải đầu tiên đầy hứa hẹn dưới sự dẫn dắt của HLV Erik ten
+                  Hag.
+                </div>
+                </article>
+                }
+            </div>
+          </div>
+        </div>
+        <div class="sub-col">
+          <div class="banner">
+            <div class="banner_show">
+              <img src="https://source.unsplash.com/featured/300x900?sig=1" alt="">
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- site footer -->
+  @@include('../component/footer/footer.html')
+
+  <!-- JS Global Compulsory-->
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/ui.js"></script>
+</body>

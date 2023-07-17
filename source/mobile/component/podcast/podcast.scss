@@ -1,0 +1,200 @@
+.box-podcast {
+    background: url(../img/bg-podcast.png) top center/100% auto no-repeat;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 -16px !important;
+
+    .content {
+        overflow: auto;
+
+        .photo {
+            float: left;
+            margin-right: 30px;
+            width: 300px;
+            height: 300px;
+            display: none;
+
+            img {
+                border-radius: 6px;
+            }
+        }
+
+        .article__sub-title{
+            color: #fff;
+        }
+        .article__title {
+            // font-weight: $font-weight-medium;
+            // font-size: 24px;
+            line-height: 31px;
+            color: #fff;
+        }
+
+        .article__meta {
+            margin-top: 16px;
+
+            >* {
+
+                i {
+                    &::before {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .row {
+                >* {
+                    color: #fff;
+                }
+
+                &:nth-child(2) {
+                    border-color: rgba(255, 255, 255, 0.2);
+                }
+
+                .gg-news {
+                    color: #e21f26;
+                }
+            }
+        }
+
+        .article__sapo {
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            margin-top: 20px;
+            font-weight: $font-weight-normal;
+        }
+    }
+
+    .audio {
+        background: #495057;
+        border-color: #E9ECEF;
+        padding: 12px 20px;
+        margin: 12px -20px -20px;
+
+        .right {
+            display: none;
+        }
+
+        .left {
+            >.wrap {
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+
+                .btn-prev {
+                    width: 24px;
+                    height: 24px;
+                    background: url(../img/rotate-left.png) center center/24px no-repeat;
+                }
+
+                .btn-next {
+                    width: 24px;
+                    height: 24px;
+                    background: url(../img/rotate-right.png) center center/24px no-repeat;
+                }
+            }
+        }
+
+
+        .progress-bar {
+
+            display: block;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            .bg {
+                border-top: 1px solid rgba(233, 236, 239, 0.3);
+            }
+
+            .current_time {
+                width: 10px;
+                height: 10px;
+                top: -1px !important;
+            }
+
+            .bg,
+            .fill-recent,
+            .current_time {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .fill-recent {
+                border-color: #fff;
+                width: 20%;
+            }
+
+        }
+
+        .mute-wrap {
+            order: 1;
+            // min-width: 122px;
+            display: flex;
+
+            .volume-slider {
+                width: 62px;
+                margin-right: 10px;
+                display: none;
+            }
+        }
+
+        .time-display {
+            width: auto;
+
+            >* {
+                font-weight: $font-weight-normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: #FFFFFF;
+            }
+
+            .separator {
+                margin: 0 3px;
+            }
+        }
+
+        .volume-slider .volume-slider-handle:before,
+        .volume-slider .volume-slider-handle {
+            background-color: #fff;
+
+        }
+
+        .volume-slider .volume-slider-handle:after {
+            background: rgba(233, 236, 239, 0.3);
+        }
+
+        .mute-button {
+            padding: 0;
+            min-width: 22px;
+        }
+
+        .mute-button:hover i,
+        .mute-button i,
+        .time-display,
+        .ic-audio-pause,
+        .play-button i,
+        .play-button:hover i {
+            color: #fff !important;
+        }
+
+        .play-button i {
+            &::before {
+                font-size: 12px;
+            }
+        }
+
+        .play-button {
+            margin: 0 6px;
+        }
+
+        .play-button>span {
+            background: transparent;
+            border: 1px solid #fff;
+
+            &:hover {
+                background: transparent;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}

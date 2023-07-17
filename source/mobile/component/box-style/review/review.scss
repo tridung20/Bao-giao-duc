@@ -1,0 +1,101 @@
+.review {
+    .title {
+        background: url(../img/box-heading.png?v2) center center/120px 25px no-repeat;
+        font-size: 0;
+        width: 120px;
+        height: 25px;
+    }
+
+    .box-content {
+        margin-top: 20px;
+        position: relative;
+
+        .review-img {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: -14px;
+            left: 16px;
+
+            >* {
+                width: 40px;
+                height: 40px;
+                background: #ccc;
+                border-radius: 50%;
+                margin-left: -10px;
+                font-size: 0;
+                border: 2px solid #fff;
+                object-fit: cover;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+        .story {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #E9ECEF;
+
+            &:first-child,
+            &:nth-child(2) {
+                margin-top: 0;
+                padding-top: 0;
+                border-top: none;
+            }
+
+            &:nth-child(2) {
+                .story__thumb {
+                    display: block;
+                }
+
+                .story__heading a {
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &__thumb {
+                width: 100%;
+                height: 215px;
+                // height: 60vw;
+                // max-height: 339px;
+                display: none;
+                margin-bottom: 8px;
+
+                @media screen and (min-width: 768px) {
+                    height: 285px;
+                }
+            }
+
+            &__heading a {
+                font-weight: $font-weight-medium;
+                font-size: 17px;
+                line-height: 25px;
+                padding-left: 23px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background: url(../img/star.png) center center/13px no-repeat;
+                    width: 13px;
+                    height: 17px;
+                    top: 2px;
+                    left: 0;
+                    opacity: 0.3;
+                }
+            }
+
+        }
+    }
+}
+
+.review+.timeline {
+    margin-top: 10px;
+    padding-top: 16px;
+    border-top: 1px solid #E9ECEF;
+}

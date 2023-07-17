@@ -1,0 +1,115 @@
+.hot-news {
+    margin-top: 10px;
+
+    .box-heading {
+        display: flex;
+        align-items: baseline;
+        position: relative;
+        // margin-bottom: 15px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: $secondary;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+        }
+
+        .title {
+            display: flex;
+            padding: 6px 12px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: $secondary;
+            font-size: 20px;
+            line-height: 1.5;
+            font-family: $font-family-sans-serif;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+        }
+    }
+    
+    .box-content {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+        .story {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #e9ecef;
+    
+            &:first-child {
+                margin-top: 0;
+                min-height: 252px;
+    
+            }
+    
+            &__thumb {
+                width: 100%;
+                height: 200px;
+                margin-bottom: 16px;
+            }
+    
+            &__heading a {
+                font-size: 16px;
+                font-family: $font-family-branch;
+                font-weight: $font-weight-bold;
+                line-height: 1.5;
+                // margin-right: 65px;
+            }
+    
+            &__meta {
+                display: flex;
+                align-items: center;
+                margin-top: 8px;
+                gap: 8px;
+                
+                .time {
+                    display: block;
+                    font-weight: $font-weight-normal;
+                    font-size: 13px;
+                    line-height: 1.5;
+                    color: $text;
+                }
+
+                .vertical-line {
+                    width: 1px;
+                    height: 16px;
+                    background-color: $text;
+                }
+    
+                .title-cate {
+                    display: block;
+                    font-weight: $font-weight-medium;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    line-height: 1.5;
+                    color: $secondary;
+                }
+            }
+    
+            &:nth-child(1) {
+                border-top: none;
+                background: url(../img/1.png) right 0px top 240px no-repeat;
+            }
+    
+            &:nth-child(2) {
+                background: url(../img/2.png) right 0px top 24px no-repeat;
+            }
+    
+            &:nth-child(3) {
+                background: url(../img/3.png) right 0px top 24px no-repeat;
+            }
+    
+            &:nth-child(4) {
+                background: url(../img/4.png) right 0px top 24px no-repeat;
+            }
+    
+            &:nth-child(5) {
+                background: url(../img/5.png) right 0px top 24px no-repeat;
+            }
+        }
+    }
+}

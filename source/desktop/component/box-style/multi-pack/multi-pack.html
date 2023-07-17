@@ -1,0 +1,75 @@
+<div class="multi-pack">
+    <div class="top">
+        <div class="box-story">
+            <h3 class="box-heading">
+                <a href="#" class="title">thời sự</a>
+            </h3>
+            <div class="box-content">
+                <article class="story">
+                    <figure class="story__thumb">
+                        <a href="#" title=""> <img src="https://source.unsplash.com/featured/370x210?sig=1" alt="370x210 (~16:9)"></a>
+                    </figure>
+                    <h5 class="story__heading">
+                        <a href="#">
+                            Nghệ An: Thông tin nổi bật ngày 18/12
+                            Nghệ An: Thông tin nổi bật ngày 18/12
+                            Nghệ An: Thông tin nổi bật ngày 18/12
+                        </a>
+                    </h5>
+                </article>
+                <article class="story">
+                    <h5 class="story__heading">
+                        <a href="#">
+                            Chủ tịch nước trao tặng Huân chương Lao động cho các học sinh đoạt giải quốc tế
+                        </a>
+                    </h5>
+                </article>
+                <article class="story">
+                    <h5 class="story__heading">
+                        <a href="#">
+                            Gần 100 công chức Nghĩa Đàn tham gia thi kiểm tra, sát hạch
+                        </a>
+                    </h5>
+                </article>
+            </div>
+        </div>
+        @@for (var i = 0; i < 2; i++) { 
+            <div class="box-story">
+                <h3 class="box-heading">
+                    <a href="#" class="title">thời sự</a>
+                </h3>
+                <div class="box-content">
+                    <article class="story">
+                        <figure class="story__thumb">
+                            <a href="#" title=""> <img src="https://source.unsplash.com/featured/370x210?sig=1" alt="370x210 (~16:9)"></a>
+                        </figure>
+                        <h5 class="story__heading">
+                            <a href="#">
+                                Nghệ An: Thông tin nổi bật ngày 18/12
+                            </a>
+                        </h5>
+                    </article>
+                    <article class="story">
+                        <h5 class="story__heading">
+                            <a href="#">
+                                Chủ tịch nước trao tặng Huân chương Lao động cho các học sinh đoạt giải quốc tế
+                            </a>
+                        </h5>
+                    </article>
+                    <article class="story">
+                        <h5 class="story__heading">
+                            <a href="#">
+                                Gần 100 công chức Nghĩa Đàn tham gia thi kiểm tra, sát hạch
+                            </a>
+                        </h5>
+                    </article>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="bottom">
+        @@for (var i = 0; i < 10; i++) { 
+            @@include('../story/story.html') 
+        } 
+    </div> 
+</div>

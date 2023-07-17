@@ -1,0 +1,382 @@
+// style layout
+// style for detail page
+
+@mixin classOutsetLeftRightDetail {
+
+    &.outset-left {
+        margin-left: auto;
+    }
+
+    &.outset-right {
+        margin-right: auto;
+    }
+}
+
+@mixin maxWidthFullWiwthDetail {
+
+    &.full-width,
+    &.max-width {
+        width: 100%;
+    }
+
+}
+
+// style table in side blockquote, notebox
+@mixin table {
+    table {
+
+        &.full-width,
+        &.max-width {
+            width: 100%;
+        }
+    }
+
+    @include tableNotBorder();
+
+}
+
+@mixin space {
+    >* {
+        margin-top: 16px !important;
+
+        &:first-child {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+@mixin tableNotBorder {
+
+    td,
+    th {
+        padding: 0;
+        border: none;
+        display: block;
+        align-items: center;
+    }
+}
+
+@mixin classLeftRight {
+
+    &.align-left {
+        width: 50%;
+        float: left;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    &.align-right {
+        width: 50%;
+        float: right;
+        margin-left: 16px;
+        margin-bottom: 16px;
+    }
+
+}
+
+@mixin maxWidth {
+    &.max-width {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100vw - 17px);
+        max-width: 1300px;
+    }
+}
+
+@mixin alignLeftRight {
+    &[align="center"] {
+        width: 100%;
+        @include tableNotBorder();
+        text-align: left;
+    }
+
+    &[align="left"] {
+        width: 50%;
+        float: left;
+        margin-right: 16px;
+        margin-bottom: 16px;
+        @include tableNotBorder();
+        text-align: left;
+    }
+
+    &[align="right"] {
+        width: 50%;
+        float: right;
+        margin-left: 16px;
+        margin-bottom: 16px;
+        @include tableNotBorder();
+        text-align: left;
+    }
+}
+
+
+.zce-content-body {
+    table {
+
+        td,
+        th {
+            padding: 0;
+        }
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        width: auto;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    figcaption,
+    .caption {
+        font-size: 16px;
+        line-height: 21px;
+        color: #6C757D;
+        text-align: center;
+        margin-top: 8px;
+        display: block;
+        font-weight: $font-weight-normal;
+        font-style: italic !important;
+
+        >* {
+            margin-top: 0;
+        }
+    }
+
+    //stle table defaut 
+    table:not([class]) {
+        width: 100%;
+
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid #E9ECEF;
+        }
+    }
+
+    table:has([class]) {
+        @include tableNotBorder();
+    }
+
+
+    figure,
+    table,
+    blockquote,
+    .notebox,
+    .poll-box {
+        @include classLeftRight();
+        @include alignLeftRight();
+        @include maxWidth();
+    }
+
+    blockquote,
+    .notebox {
+        @include space();
+        @include table();
+    }
+
+    .live-zone,
+    .interview-zone {
+
+        table,
+        figure {
+            @include maxWidthFullWiwthDetail();
+            @include classOutsetLeftRightDetail();
+        }
+    }
+}
+
+// for detail-page
+.site-body {
+    >.container:not(.longform) {
+        .zce-content-body {
+
+            figure,
+            table,
+            blockquote,
+            .notebox,
+            .poll-box {
+                @include classOutsetLeftRightDetail();
+            }
+
+            table {
+                @include maxWidthFullWiwthDetail();
+            }
+
+            blockquote {
+                &.outset-left {
+                    padding-left: 0;
+                }
+
+                &.outset-right {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// style blockquote, note for editor CMS
+.zce-content-body {
+
+    ul,
+    ol {
+        li {
+
+            color: $primary;
+            padding-left: 18px;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: #343A40;
+                top: 12px;
+                left: 0;
+                font-size: 15px;
+            }
+
+            &:hover {
+                &:before {
+                    background: $primary;
+                }
+            }
+
+        }
+    }
+
+    blockquote {
+        padding: 80px 10px 0;
+        background: url(../img/quote.png) top 15px center/40px no-repeat;
+        font-weight: $font-weight-semibold;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center !important;
+
+        >* {
+            text-align: center !important;
+        }
+
+        .author {
+            margin: 30px auto 0;
+            font-size: 14px;
+            color: #343a40;
+            font-weight: 400;
+            display: block;
+            text-align: center;
+            position: relative;
+            width: fit-content;
+            padding-left: 25px;
+
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 20px;
+                height: 1px;
+                background: #212529;
+                left: 0;
+                top: calc(50% - 1px);
+            }
+        }
+
+        &[align="left"] {
+            padding-left: 0;
+        }
+
+        &.align-left {
+            padding-left: 0;
+        }
+
+        &[align="right"] {
+            padding-left: 0;
+        }
+
+        &.align-right {
+            padding-right: 0;
+        }
+    }
+
+    .notebox {
+        background: #FFF3CD;
+        border: 2px dashed #FFC107;
+        border-radius: 8px;
+        padding: 24px;
+    }
+
+    .poll-box {
+        background: #FFFFFF;
+        box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: block;
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        .box-heading {
+            >* {
+                font-weight: 400;
+                font-size: 14px;
+                color: #343A40;
+            }
+        }
+
+        .box-content {
+            margin-top: 15px;
+
+            .desc {
+                font-weight: 500;
+                font-size: 19px;
+            }
+
+            label {
+                cursor: pointer;
+                background: #F8F9FA;
+                border-radius: 4px;
+                padding: 12px;
+                display: block;
+                margin-top: 8px;
+                font-weight: $font-weight-normal;
+                font-size: 16px;
+                line-height: 20px;
+
+                input {
+                    margin-right: 12px;
+                }
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .wrap-button {
+            margin-top: 15px;
+
+            >* {
+                min-width: 127px;
+                height: 32px;
+                padding: 6px 32px;
+                border-radius: 6px;
+                font-weight: $font-weight-medium;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .btn-send {
+                background: #DC3545;
+                color: #fff;
+            }
+
+            .btn-see {
+                background: #fff;
+                color: #000000;
+            }
+        }
+    }
+}
+

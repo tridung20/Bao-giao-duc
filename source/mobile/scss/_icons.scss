@@ -1,0 +1,273 @@
+//  icon bài viết (dùng bằng ảnh)
+[class^=ic-type-] {
+    display: inline-block !important;
+    position: relative;
+    top: 2px;
+    margin-left: 3px;
+}
+
+.ic-type-img {
+
+    &::before {
+        content: "\e91b";
+    }
+}
+
+.ic-type-video {
+
+    &::before {
+        content: "\e923";
+    }
+}
+
+.ic-type-audio {
+
+    &::before {
+        content: "\e922";
+    }
+}
+
+.ic-type-interview {
+    &::before {
+        content: "\e91c";
+    }
+}
+
+.ic-type-info {
+    &::before {
+        content: "\e900";
+    }
+}
+
+.ic-type-live,
+.ic-type-longform,
+.ic-type-emagazine {
+    position: relative;
+    top: 3px;
+}
+
+.ic-type-live {
+    background: url(../img/live.svg) center center no-repeat;
+    width: 50px;
+    height: 20px;
+    display: block;
+    border-radius: 5px;
+}
+
+.ic-type-longform {
+    background: url(../img/longform.svg) center center no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.ic-type-emagazine {
+    background: url(../img/e-ma.svg) center center no-repeat;
+    width: 28px;
+    height: 20px;
+    display: block;
+}
+
+
+// icomoon  
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon.eot?idmn5u');
+    src: url('../fonts/icomoon/icomoon.eot?idmn5u#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.ttf?idmn5u') format('truetype'),
+        url('../fonts/icomoon/icomoon.woff?idmn5u') format('woff'),
+        url('../fonts/icomoon/icomoon.svg?idmn5u#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^=ic-] {
+    font-size: 0;
+
+    &::before {
+        font-size: 20px;
+    }
+}
+
+[class^="ic-"],
+[class*=" ic-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon';
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ic-star:before {
+    content: "\e927";
+}
+
+.ic-print:before {
+    content: "\e926";
+    color: #fff;
+}
+
+.ic-mic:before {
+    content: "\e925";
+}
+
+.ic-back1:before {
+    content: "\e924";
+}
+
+.ic-chart:before {
+    content: "\e900";
+}
+
+.ic-gallery:before {
+    content: "\e91b";
+}
+
+.ic-messages:before {
+    content: "\e91c";
+}
+
+.ic-microphone:before {
+    content: "\e922";
+}
+
+.ic-play-circle:before {
+    content: "\e923";
+}
+
+.ic-location:before {
+    content: "\e921";
+}
+
+.ic-down1:before {
+    content: "\e919";
+    color: #495057;
+}
+
+.ic-up1:before {
+    content: "\e91e";
+    color: #495057;
+}
+
+.ic-eye:before {
+    content: "\e91f";
+}
+
+.ic-down3:before {
+    content: "\e920";
+}
+
+.ic-search:before {
+    content: "\e91d";
+}
+
+.ic-back:before {
+    content: "\e901";
+}
+
+.ic-calendar:before {
+    content: "\e902";
+}
+
+.ic-down:before {
+    content: "\e903";
+}
+
+.ic-down2:before {
+    content: "\e904";
+}
+
+.ic-droplet:before {
+    content: "\e905";
+}
+
+.ic-e-ma:before {
+    content: "\e906";
+}
+
+.ic-e-magazine:before {
+    content: "\e907";
+}
+
+.ic-home:before {
+    content: "\e908";
+}
+
+.ic-img:before {
+    content: "\e909";
+}
+
+.ic-lang:before {
+    content: "\e90a";
+}
+
+.ic-left:before {
+    content: "\e90b";
+}
+
+.ic-like:before {
+    content: "\e90c";
+}
+
+.ic-mail:before {
+    content: "\e90d";
+}
+
+.ic-menu:before {
+    content: "\e90e";
+}
+
+.ic-pen:before {
+    content: "\e90f";
+}
+
+.ic-phone:before {
+    content: "\e910";
+}
+
+.ic-picture:before {
+    content: "\e911";
+}
+
+.ic-podcast:before {
+    content: "\e912";
+}
+
+.ic-promo:before {
+    content: "\e913";
+}
+
+.ic-quote:before {
+    content: "\e914";
+}
+
+.ic-right:before {
+    content: "\e915";
+}
+
+.ic-tele:before {
+    content: "\e916";
+}
+
+.ic-tivi:before {
+    content: "\e917";
+}
+
+.ic-up:before {
+    content: "\e918";
+}
+
+.ic-wind:before {
+    content: "\e91a";
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GIAODUC</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<style>
+  .modal-wraper {
+    min-height: 450px;
+  }
+
+  .btn-modal {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+</style>
+
+<body>
+  <!-- site header -->
+  <header class="site-header ">
+    <div class="top-header">
+      <div class="container">
+        <div class="left">
+          <time>Thứ sáu, 30/06/2023</time>
+          <a href="">Thông tin tòa soạn</a>
+        </div>
+        <div class="right">
+          <a href="">
+            <i class="ic-smartphone"></i>Đường dây nóng: 0987.654.321
+          </a>
+          <a href="">
+            <i class="ic-mail"></i> toasoan@giaoduc.net.vn
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-header">
+        <div class="social">
+          <a href="#" class="zl">
+            zl
+          </a>
+          <a href="#" class="fb">
+            fb
+          </a>
+          <a href="#" class="tw">
+            tw
+          </a>
+        </div>
+        <a href="index.html" class="logo">logo</a>
+        <div class="box-icon">
+          <a href="#" class="icon-search">search</a>
+          <a href="#" class="icon-user">user</a>
+          <a href="#" class="icon-menu">menu</a>
+        </div>
+      </div>
+      <div class="navigation sticky">
+        <ul class="menu">
+          <li>
+            <a href="" class="active">Trang chủ</a>
+          </li>
+          <li>
+            <a href="">Giáo dục 24h</a>
+          </li>
+          <li>
+            <a href="">Tiêu điểm</a>
+          </li>
+          <li>
+            <a href="">Góc nhìn</a>
+          </li>
+          <li>
+            <a href="">Du học</a>
+          </li>
+          <li>
+            <a href="">Sức khỏe học đường</a>
+          </li>
+          <li>
+            <a href="">Văn hóa</a>
+          </li>
+          <li>
+            <a href="">Kinh tế</a>
+          </li>
+          <li>
+            <a href="">Multimedia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- site body -->
+  <div class="site-body">
+    <div class="container modal-wraper">
+      <button class="btn-modal" data-target="globalModal">modal global</button>
+      <button class="btn-modal" data-target="loginModal">login</button>
+      <button class="btn-modal" data-target="registerModal">register</button>
+      <button class="btn-modal" data-target="forgetPassModal">forget password</button>
+      <button class="btn-modal" data-target="commentModal">comment</button>
+      <button class="btn-modal" data-target="voteModal">vote</button>
+    </div>
+  </div>
+
+  <!-- site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer_content">
+        <div class="left">
+          <a href="" class="logo"></a>
+          <div class="info">
+            <p>© Tạp chí điện tử Giáo dục Việt Nam</p>
+            <p>
+              <span class="bold">Cơ quan chủ quản</span>: Hiệp hội các Trường đại học, cao đẳng Việt Nam.
+            </p>
+            <p>
+              <span class="bold">Giấy phép số</span>: 74/GP-BTTTT ngày 26/02/2020.
+            </p>
+            <p>Phó Chủ tịch Hiệp hội, Tổng Biên tập</p>
+            <p>Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản.</p>
+          </div>
+        </div>
+        <div class="right">
+          <p>
+            <i class="ic-location"></i>
+            <span class="bold"></span>Tầng 6B, tòa nhà số 14-16 phố Hàm Long, phường Phan Chu Trinh, quận Hoàn Kiếm, Hà Nội.
+          </p>
+          <p>
+            <i class="ic-smartphone"></i>
+            <span class="bold">Liên hệ</span>: 0938.766.888 - 0243.5569666
+          </p>
+          <p>
+            <i class="ic-mail"></i>
+            <span class="bold">Email</span>: toasoan@giaoduc.net.vn
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+        <p class="text">Ghi rõ nguồn “Báo Lào Cai điện tử” khi sử dụng thông tin trang này.</p>
+    </div> -->
+  </footer>
+  <div class="modal " data-target="loginModal">
+    <div class="modal-header">
+      <h5 class="modal-title">Kết quả</h5>
+    </div>
+    <div class="modal-body scroll ">
+      <div class="d-flex w-650">
+        <div class="rank-1">
+          <div class="text-center">Đăng nhập bằng tài khoản VietTimes</div>
+          <div class="form-group">
+            <label for="">Tên tài khoản (email đã đăng ký với VietTimes)</label>
+            <input type="email" class="form-control" placeholder="Nhập email">
+            <small class="feedback">Bạn chưa nhập email.</small>
+          </div>
+          <div class="form-group">
+            <label for="">Mật khẩu tài khoản</label>
+            <div class="d-flex">
+              <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+              <i class="ic-eye slash"></i>
+            </div>
+          </div>
+          <p>Bạn quên mật khẩu? <a href="#" class="forgot-password">Lấy lại mật khẩu</a>
+          </p>
+        </div>
+        <div class="rank-2">
+          <div class="text-center">Đăng nhập nhanh bằng tài khoản mạng xã hội</div>
+          <div class="social">
+            <a href="#" class="fb" title="Facebook">
+              <i class="ic-square-facebook"></i>Facebook
+            </a>
+            <a href="#" class="zl" title="Zalo">
+              <i class="ic-zalo"></i>Zalo
+            </a>
+            <a href="#" class="gg" title="Google">
+              <i class="ic-google"></i>Google
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn-close">Đóng</button>
+      <button type="button" class="btn-submit">Đăng nhập</button>
+    </div>
+  </div> <!-- modal login -->
+
+  <div class="modal" data-target="voteModal">
+    <div class="modal-header">
+      <h5 class="modal-title">Kết quả</h5>
+    </div>
+    <div class="modal-body scroll">
+      <h4 class="heading-body">Liệu có nên phạt nặng các học sinh đánh nhau, tổ chức đánh người trong môi trường
+        giáo dục không ?</h4>
+      <div class="modal-vote">
+        <ul class="">
+          <li>
+            <div class="info-result">
+              <div class="text">Tăng cường giáo dục</div>
+              <div class="color-bar">
+                <span percent="91" class="color-result" style="width:91%;">
+                  <label class="text-result">91%</label>
+                </span>
+              </div>
+              <div class="number">
+                <label>2.330</label>
+                phiếu
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="info-result">
+              <div class="text">Đình chỉ học tập</div>
+              <div class="color-bar">
+                <span percent="91" class="color-result" style="width:9%;">
+                  <label class="text-result">9%</label>
+                </span>
+              </div>
+              <div class="number">
+                <label>2.33</label>
+                phiếu
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="info-result">
+              <div class="text">Tăng cường giáo dục</div>
+              <div class="color-bar">
+                <span percent="91" class="color-result" style="width:9%;">
+                  <label class="text-result">9%</label>
+                </span>
+              </div>
+              <div class="number">
+                <label>2.33</label>
+                phiếu
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="clearfix">
+          <span class="total-vote">Tổng Cộng: <label>2.552 phiếu</label>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn-close">Đóng</button>
+    </div>
+  </div> <!-- modal vote -->
+
+  <div class="modal" data-target="commentModal">
+    <div class="modal-header">
+      <h5 class="modal-title">Kết quả</h5>
+    </div>
+    <div class="modal-body scroll">
+      <div class="form-group">
+        <label for="">Email của bạn</label>
+        <input type="email" class="form-control" placeholder="Nhập email">
+      </div>
+      <div class="form-group">
+        <label for="">Tên hiển thị khi bình luận</label>
+        <input type="type" class="form-control" placeholder="Nhập tên hiển thị">
+        <small class="form-text">Bạn chưa nhập tên hiển thị.</small>
+      </div>
+      <div class="form-group">
+        <label for="">Nhập bình luận</label>
+        <textarea rows="3" class="form-control"></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn-close">Đóng</button>
+      <button type="button" class="btn-submit">Tạo tài khoản</button>
+    </div>
+  </div> <!-- modal comment -->
+
+  <div class="modal" data-target="forgetPassModal">
+    <div class="modal-header">
+      <h5 class="modal-title">Quên mật khẩu</h5>
+    </div>
+    <div class="modal-body scroll">
+      <div class="heading-body">Nhập email của bạn để lấy lại mật khẩu</div>
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Nhập email của bạn">
+      </div>
+      <div class="recaptcha">
+        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn-close">Đóng</button>
+      <button type="button" class="btn-submit">Xác nhận</button>
+    </div>
+  </div> <!-- modal forget password -->
+
+  <div class="modal" data-target="registerModal">
+    <div class="modal-header">
+      <h5 class="modal-title">Đăng ký</h5>
+    </div>
+    <div class="modal-body scroll">
+      <h4 class="heading-body">Tạo tài khoản VietTimes để sử dụng đầy đủ tiện ích và tham gia bình luận bài viết
+      </h4>
+      <div class="form-group">
+        <label for="">Tên tài khoản (là địa chỉ email của bạn)</label>
+        <input type="email" class="form-control" placeholder="Nhập email">
+        <small class="feedback">Bạn chưa nhập email.</small>
+      </div>
+      <div class="form-group">
+        <label for="">Mật khẩu của tài khoản VietTimes</label>
+        <div class="d-flex">
+          <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+          <i class="ic-eye slash"></i>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">Tên hiển thị khi bình luận</label>
+        <input type="type" class="form-control" placeholder="Nhập tên hiển thị">
+      </div>
+      <div class="recaptcha">
+        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="">
+      </div>
+      <div class="text-notice">
+        <input type="checkbox">
+        <label class="form-check-label">Đồng ý với <a href="https://policies.google.com/privacy" rel="nofollow" target="_blank">quy định</a> của tòa soạn</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn-close">Đóng</button>
+      <button type="button" class="btn-submit">Tạo tài khoản</button>
+    </div>
+  </div> <!-- modal register -->
+
+  <div class="modal" data-target="globalModal">
+    <div class="modal-header">
+      <h5 class="modal-title">Đây là tên của modal</h5>
+    </div>
+    <div class="modal-body scroll w-650">
+      <h4 class="heading-body">Đây là headingggg... của modal
+      </h4>
+      <p class="text-center">đây là text căn giữa</p>
+      <p class="text-left">đây là text căn trái</p>
+      <p class="text-right">đây là text căn phải</p>
+      <p class="inline-block">đây là text có thẻ <a> aaaaaaaa</a> ở trong </p>
+      <div class="inline-block">đây là text có thẻ <a> aaaaaaaa</a> ở trong</div>
+      <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+      </table>
+      <h1>Đây là thẻ h1</h1>
+      <h2>Đây là thẻ h2</h2>
+      <h3>Đây là thẻ h3</h3>
+      <h4>Đây là thẻ h4</h4>
+      <h5>Đây là thẻ h5</h5>
+      <div class="form-group">
+        <label for="">Đây là tên của select</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">Đây là tên của input</label>
+        <input type="email" class="form-control" placeholder="Nhập email">
+        <small class="feedback">Bạn chưa nhập email.</small>
+      </div>
+      <div class="form-group">
+        <label for="">Đây là tên của input</label>
+        <div class="d-flex">
+          <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+          <i class="ic-eye slash"></i>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">Đây là tên của textarea</label>
+        <textarea rows="3" class="form-control"></textarea>
+      </div>
+      <div class="recaptcha">
+        <img src="https://www.dstny.se/app/uploads/captcha-norobot.png" alt="">
+      </div>
+      <div class="text-notice">
+        <input type="checkbox">
+        <label class="form-check-label">Đồng ý với <a href="https://policies.google.com/privacy" rel="nofollow" target="_blank">quy định</a> của tòa soạn</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn-close">Đóng</button>
+      <button type="button" class="btn-submit">Next</button>
+    </div>
+  </div> <!-- modal global -->
+
+  <!-- JS Global Compulsory-->
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/ui.js"></script>
+</body>

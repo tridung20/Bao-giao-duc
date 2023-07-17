@@ -1,0 +1,14 @@
+@mixin title {
+    font-size: 25px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: $font-family-branch;
+    font-weight: $font-weight-normal;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $primary;
+    }
+
+}

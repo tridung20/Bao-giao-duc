@@ -1,0 +1,151 @@
+// html global
+html {
+  font-size: 14px !important;
+}
+
+$body-bg: #fff;
+$body-color: #343A40;
+$font-family-sans-serif: "Mulish", Arial, Helvetica, sans-serif;
+// $font-family-serif: "PoppinsZ", Arial, Helvetica, sans-serif;
+$font-family-branch: "NotoSerif", Arial, Helvetica, sans-serif;
+$font-size-base: 1.4rem;
+
+
+// Color system
+$primary: #ED1C24 !default;
+$secondary: #126495 !default;
+$third: #00ACEE !default;
+$text: #343A40 !default;
+// $stroke: #DDDDDD !default;
+
+
+$white: #fff !default;
+$gray-100: #F2F4F7 !default;
+$gray-200: #E4E7EC !default;
+$gray-300: #D0D5DD !default;
+$gray-400: #98A2B3 !default;
+$gray-500: #667085 !default;
+$gray-600: #475467 !default;
+$gray-700: #344054 !default;
+$gray-800: #1D2939 !default;
+$gray-900: #101828 !default;
+$black: #000 !default;
+
+// $grays: (
+//   ) !default;
+// // stylelint-disable-next-line scss/dollar-variable-default
+// $grays: map-merge(("100": $gray-100,
+//       "200": $gray-200,
+//       "300": $gray-300,
+//       "400": $gray-400,
+//       "500": $gray-500,
+//       "600": $gray-600,
+//       "700": $gray-700,
+//       "800": $gray-800,
+//       "900": $gray-900),
+//     $grays
+// );
+
+// $blue: #007bff !default;
+// $indigo: #6610f2 !default;
+// $purple: #6f42c1 !default;
+// $pink: #e83e8c !default;
+// $red: #dc3545 !default;
+// $orange: #fd7e14 !default;
+// $yellow: #ffc107 !default;
+// $green: #28a745 !default;
+// $teal: #20c997 !default;
+// $cyan: #17a2b8 !default;
+
+// $colors: (
+//   ) !default;
+// // stylelint-disable-next-line scss/dollar-variable-default
+// $colors: map-merge(("blue": $blue,
+//       "indigo": $indigo,
+//       "purple": $purple,
+//       "pink": $pink,
+//       "red": $red,
+//       "orange": $orange,
+//       "yellow": $yellow,
+//       "green": $green,
+//       "teal": $teal,
+//       "cyan": $cyan,
+//       "white": $white,
+//       "gray": $gray-600,
+//       "gray-dark": $gray-800),
+//     $colors
+// );
+
+// $dark-mode: false; // biến cho darkmode
+
+// $primary: $blue !default;
+// $secondary: $gray-600 !default;
+// // $success: $green !default;
+// // $info: $cyan !default;
+// $warning: $yellow !default;
+// $danger: $red !default;
+// $light: $gray-100 !default;
+// $dark: $gray-800 !default;
+
+// $theme-colors: (
+//   ) !default;
+// // stylelint-disable-next-line scss/dollar-variable-default
+// $theme-colors: map-merge(("primary": $primary,
+//       "secondary": $secondary,
+//       // "success": $success,
+//       "info": $info,
+//       "warning": $warning,
+//       "danger": $danger,
+//       "light": $light,
+//       "dark": $dark),
+//     $theme-colors
+// );
+
+// // Set a specific jump point for requesting color jumps
+// $theme-color-interval: 8% !default;
+
+// // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+// $yiq-contrasted-threshold: 150 !default;
+
+// // Customize the light and dark text colors for use in our YIQ color contrast function.
+// $yiq-text-dark: $gray-900 !default;
+// $yiq-text-light: $white !default;
+
+
+
+// // Body
+// $body-bg: $white !default;
+// $body-color: $gray-900 !default;
+
+
+// Components
+$border-color: #DDDDDD;
+$hover : $third;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+// $font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+// $font-weight-semibolder: 800;
+
+// ============ Responsive ================
+
+// Breakpoint
+$lg :1024px;
+$xl: 1170px;
+
+:root {
+  --column-gap: 30px;
+  --container: 1000px;
+}
+
+@media (min-width: 1366px) {
+  :root {
+    --column-gap: 30px;
+    --container: 1170px;
+  }
+}

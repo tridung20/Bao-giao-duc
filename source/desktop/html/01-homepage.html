@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GIAODUC</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/css/desktop.css">
+</head>
+
+<body>
+  <!-- site header -->
+  @@include('../component/header/header.html')
+
+  <!-- site body -->
+  <div class="site-body">
+    <!-- <div class="social">
+      <a href="" class="fb">fb</a>
+      <a href="" class="yt">yt</a>
+      <a href="" class="zl">zl</a>
+      <a href="" class="tw">tw</a>
+    </div> -->
+    <div class="container">
+      <!-- <div class="banner-wrap">
+        <div class="banner">
+          <div class="banner_show">
+            <a href="#">
+              <img src="https://source.unsplash.com/featured/300x100?sig=1" alt="">
+            </a>
+          </div>
+          <div class="banner_show">
+            <a href="#">
+              <img src="https://source.unsplash.com/featured/300x100?sig=1" alt="">
+            </a>
+          </div>
+          <div class="banner_show">
+            <a href="#">
+              <img src="https://source.unsplash.com/featured/300x100?sig=1" alt="">
+            </a>
+          </div>
+        </div>
+      </div> -->
+      @@include('../component/box-style/abf-homepage/abf-homepage.html')
+      <!-- @@include('../component/box-style/topics/topics.html') -->
+      <div class="banner">
+        <div class="banner_show">
+          <img src="https://source.unsplash.com/featured/700x100?sig=1" alt="">
+        </div>
+      </div>
+    </div>
+    @@include('../component/box-style/multimedia/multimedia.html')
+    <!-- <div class="banner">
+      <div class="banner_show">
+        <img src="https://source.unsplash.com/featured/700x100?sig=1" alt="">
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="col">
+        <div class="main-col">
+          <div class="timeline">
+            <div class="wrap-heading">
+              <h3 class="box-heading">
+                <a href="" class="title">Tin cập nhật</a>
+              </h3>
+            </div>
+            <div class="box-content">
+              @@for ( var i=0; i < 8; i++) { <article class="story">
+                <figure class="story__thumb">
+                  <a href="#" title=""> <img src="https://source.unsplash.com/featured/250x165?sig=1"
+                      alt="250x165"></a>
+                </figure>
+                <h5 class="story__heading">
+                  <a href="#">
+                    Chống khai thác IUU, ngư dân Quảng Ngãi tập trung đăng ký, đăng kiểm tàu cá
+                    <!-- <i class="ic-type-img"></i> -->
+                  </a>
+                </h5>
+                <div class="story__meta">
+                  <time class="time" datetime="2023-03-22T19:58:40+0700"> 1 giờ trước </time>
+                  <div class="vertical-line"></div>
+                  <a href="#" class="title-cate" title="VIETNAMPLUS">VIETNAMPLUS</a>
+                </div>
+                <div class="story__summary">
+                  Đầu giờ chiều 6-4, theo nguồn tin của Báo SGGP, lực lượng chức năng và Lữ đoàn Đặc công 126 cho biết,
+                  đã tìm thấy vật nghi là hộp đen chiếc trực thăng Bell 505 cùng phần lớn thân vỏ, ghế...
+                </div>
+                </article>
+                }
+            </div>
+          </div>
+          <!-- @@include('../component/box-style/story/story.html') -->
+          </div>
+          <div class="sub-col">
+            <!-- @@include('../component/box-style/box-default/box-default.html') -->
+            @@include('../component/box-style/hot-news/hot-news.html')
+            <div class="banner">
+              <div class="banner_show">
+                <img src="https://source.unsplash.com/featured/300x250?sig=1" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      @@include('../component/box-style/video/video.html')
+      <div class="container">
+        <div class="col">
+          <div class="main-col">
+            <div class="timeline">
+              <!-- <div class="wrap-heading">
+                <h3 class="box-heading">
+                  <a href="" class="title">Tin cập nhật</a>
+                </h3>
+              </div> -->
+              <div class="box-content">
+                @@for ( var i=0; i < 8; i++) { <article class="story">
+                  <figure class="story__thumb">
+                    <a href="#" title=""> <img src="https://source.unsplash.com/featured/250x165?sig=1"
+                        alt="250x165"></a>
+                  </figure>
+                  <h5 class="story__heading">
+                    <a href="#">
+                      Chống khai thác IUU, ngư dân Quảng Ngãi tập trung đăng ký, đăng kiểm tàu cá
+                      <!-- <i class="ic-type-img"></i> -->
+                    </a>
+                  </h5>
+                  <div class="story__meta">
+                    <time class="time" datetime="2023-03-22T19:58:40+0700"> 1 giờ trước </time>
+                    <div class="vertical-line"></div>
+                    <a href="#" class="title-cate" title="VIETNAMPLUS">VIETNAMPLUS</a>
+                  </div>
+                  <div class="story__summary">
+                    Đầu giờ chiều 6-4, theo nguồn tin của Báo SGGP, lực lượng chức năng và Lữ đoàn Đặc công 126 cho biết,
+                    đã tìm thấy vật nghi là hộp đen chiếc trực thăng Bell 505 cùng phần lớn thân vỏ, ghế...
+                  </div>
+                  </article>
+                  }
+                </div>
+                <button class="more-news">
+                    xem thêm
+                </button>
+              </div>
+            </div>
+            <div class="sub-col">
+              @@include('../component/box-style/box-default/box-default.html')
+              @@include('../component/box-style/box-default/box-default.html')
+              @@include('../component/box-style/box-default/box-default.html')
+              
+        </div>  
+  </div>
+  <div class="back-to-top"></div>
+  <!-- site footer -->
+  @@include('../component/footer/footer.html')
+
+  <!-- JS Global Compulsory-->
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/ui.js"></script>
+</body>

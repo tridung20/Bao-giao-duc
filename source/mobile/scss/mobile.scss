@@ -1,0 +1,56 @@
+@import "variables";
+@import "./mixins/global";
+@import "./mixins/clearfix";
+
+// ----------------------------------
+// INFO : style for global
+// ----------------------------------
+
+@import "reboot.scss";
+@import "fonts";
+@import "icons";
+@import "layout";
+@import "slick.scss";
+@import "fyi";
+@import "story";
+@import "styles";
+
+// ----------------------------------
+// INFO : style for component 
+// ----------------------------------
+
+@import '../component/header/header.scss';
+@import '../component/footer/footer.scss';
+@import '../component/modal/modal.scss';
+@import '../component/breadcrumbs/breadcrumbs.scss';
+@import '../component/search-tags/search-tags.scss';
+@import '../component/error/error.scss';
+@import '../component/podcast/podcast.scss';
+
+// ----------------------------------
+// INFO : style for detail-page
+// ----------------------------------
+
+@import '../component/detail-page/article-header/article-header.scss';
+@import '../component/detail-page/article-body/article-body.scss';
+@import '../component/detail-page/audio/audio.scss';
+@import '../component/detail-page/comment/comment.scss';
+@import '../component/detail-page/interview/interview.scss';
+@import '../component/detail-page/live/live.scss';
+@import '../component/detail-page/longform/longform.scss';
+@import '../component/detail-page/old-style/old-style.scss';
+
+
+// ----------------------------------
+// INFO : style for box-style
+// ----------------------------------
+@import '../component/box-style/timeline/timeline.scss';
+@import '../component/box-style/abf-homepage/abf-homepage.scss';
+@import '../component/box-style/topics/topics.scss';
+@import '../component/box-style/multimedia/multimedia.scss';
+@import '../component/box-style/local-news/local-news.scss';
+@import '../component/box-style/slide/slide.scss';
+@import '../component/box-style/story/story.scss';
+@import '../component/box-style/suggest/suggest.scss';
+@import '../component/box-style/review/review.scss';
+@import '../component/box-style/half-slide/half-slide.scss';
