@@ -73,16 +73,16 @@
 
 // icomoon  
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon/icomoon.eot');
-    src:  url('../fonts/icomoon/icomoon.eot') format('embedded-opentype'),
-      url('../fonts/icomoon/icomoon.ttf') format('truetype'),
-      url('../fonts/icomoon/icomoon.woff') format('woff'),
-      url('../fonts/icomoon/icomoon.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot');
+  src:  url('../fonts/icomoon/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../fonts/icomoon/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 [class^=ic-] {
     font-size: 0;
@@ -112,30 +112,45 @@
 }
 
 
-.ic-left-page:before {
+.ic-comment:before {
   content: "\e900";
 }
-.ic-right-page:before {
+.ic-fown:before {
   content: "\e901";
 }
-.ic-comment:before {
+.ic-hide:before {
   content: "\e902";
 }
-.ic-down:before {
+.ic-like:before {
   content: "\e903";
 }
-.ic-like:before {
-  content: "\e905";
+.ic-link:before {
+  content: "\e904";
 }
 .ic-location:before {
-  content: "\e907";
+  content: "\e905";
+}
+.ic-logout:before {
+  content: "\e906";
 }
 .ic-mail:before {
-  content: "\e909";
+  content: "\e907";
 }
 .ic-menu:before {
+  content: "\e908";
+}
+.ic-search:before {
+  content: "\e909";
+}
+.ic-show:before {
   content: "\e90a";
 }
 .ic-smartphone:before {
+  content: "\e90b";
+}
+.ic-time:before {
+  content: "\e90c";
+}
+.ic-user:before {
   content: "\e90d";
 }
