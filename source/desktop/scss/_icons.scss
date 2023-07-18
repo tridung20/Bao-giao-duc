@@ -46,29 +46,29 @@
 //     top: 7px;
 // }
 
-// .ic-type-live {
-//     background: url(../img/live.svg) 0 0/60px no-repeat;
-//     width: 60px;
-//     height: 24px;
-//     display: block;
-//     margin-top: -8px;
-// }
+.ic-type-live {
+    background: url(../img/live.svg) 0 0/60px no-repeat;
+    width: 60px;
+    height: 24px;
+    display: block;
+    margin-top: -8px;
+}
 
-// .ic-type-longform {
-//     background: url(../img/longform.svg) 0 0/24px no-repeat;
-//     width: 24px;
-//     height: 24px;
-//     display: block;
-//     margin-top: -8px;
-// }
+.ic-type-longform {
+    background: url(../img/longform.svg) 0 0/24px no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-top: -8px;
+}
 
-// .ic-type-emagazine {
-//     background: url(../img/e-ma.svg) 0 0/28px no-repeat;
-//     width: 28px;
-//     height: 24px;
-//     display: block;
-//     margin-top: -8px;
-// }
+.ic-type-emagazine {
+    background: url(../img/e-ma.svg) 0 0/28px no-repeat;
+    width: 28px;
+    height: 24px;
+    display: block;
+    margin-top: -8px;
+}
 
 
 // icomoon  
@@ -111,46 +111,57 @@
     justify-content: center;
 }
 
-
 .ic-comment:before {
   content: "\e900";
 }
-.ic-fown:before {
+.ic-facebook:before {
   content: "\e901";
 }
-.ic-hide:before {
+.ic-fown:before {
   content: "\e902";
 }
-.ic-like:before {
+.ic-gg:before {
   content: "\e903";
 }
-.ic-link:before {
+.ic-hide:before {
   content: "\e904";
 }
-.ic-location:before {
+.ic-like:before {
   content: "\e905";
 }
-.ic-logout:before {
+.ic-link:before {
   content: "\e906";
 }
-.ic-mail:before {
+.ic-location:before {
   content: "\e907";
 }
-.ic-menu:before {
+.ic-logout:before {
   content: "\e908";
 }
-.ic-search:before {
+.ic-mail:before {
   content: "\e909";
 }
-.ic-show:before {
+.ic-menu:before {
   content: "\e90a";
 }
-.ic-smartphone:before {
+.ic-search:before {
   content: "\e90b";
 }
-.ic-time:before {
+.ic-show:before {
   content: "\e90c";
 }
-.ic-user:before {
+.ic-smartphone:before {
   content: "\e90d";
+}
+.ic-time:before {
+  content: "\e90e";
+}
+.ic-twitter:before {
+  content: "\e90f";
+}
+.ic-user:before {
+  content: "\e910";
+}
+.ic-zalo:before {
+  content: "\e911";
 }

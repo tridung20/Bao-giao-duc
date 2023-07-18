@@ -6,9 +6,9 @@
         align-items: flex-end;
         margin-bottom: 15px !important;
     
-        .main {
+        .main-2 {
             padding-left: 40px;
-            font-weight: 700;
+            font-weight: $font-weight-normal;
             font-family: $font-family-branch;
             color: $text;
             font-size: 20px;
@@ -27,41 +27,38 @@
             }
     
             >* {
+    
                 &.active,
                 &:hover {
                     color: $secondary;
                 }
             }
+        }
     
-            &:first-child {
-                display: flex;
-                gap: 10px;
-                padding-left: 0;
+    
+        .main-1 {
+            display: flex;
+            position: relative;
+            padding-left: 14px;
+    
+            >* {
                 font-family: $font-family-branch;
                 font-weight: $font-weight-bold;
                 font-size: 22px;
                 text-transform: uppercase;
-    
-                >* {
-                    font-size: 22px;
-                }
-    
-                &::before {
-                    display: none;
-                }
             }
-            
-            &:last-child {
-                padding-left: 40px;
-                font-family: $font-family-branch;
-                font-weight: $font-weight-normal;
-                font-size: 20px;
     
-                >* {
-                    font-size: 20px;
-                }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 32px;
+                align-self: baseline;
+                background-color: $primary;
+                left: 0;
             }
         }
+    
     }
 }
 
@@ -71,9 +68,9 @@
     align-items: flex-end;
     margin-bottom: 15px !important;
 
-    .main {
+    .main-2 {
         padding-left: 40px;
-        font-weight: $font-weight-bold;
+        font-weight: $font-weight-normal;
         font-family: $font-family-branch;
         color: $text;
         font-size: 20px;
@@ -92,39 +89,36 @@
         }
 
         >* {
+
             &.active,
             &:hover {
                 color: $secondary;
             }
         }
+    }
 
-        &:first-child {
-            display: flex;
-            gap: 10px;
-            padding-left: 0;
+
+    .main-1 {
+        display: flex;
+        position: relative;
+        padding-left: 14px;
+
+        >* {
             font-family: $font-family-branch;
             font-weight: $font-weight-bold;
             font-size: 22px;
             text-transform: uppercase;
-
-            >* {
-                font-size: 22px;
-            }
-
-            &::before {
-                display: none;
-            }
         }
-        
-        &:last-child {
-            padding-left: 40px;
-            font-family: $font-family-branch;
-            font-weight: $font-weight-normal;
-            font-size: 20px;
 
-            >* {
-                font-size: 20px;
-            }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 32px;
+            align-self: baseline;
+            background-color: $primary;
+            left: 0;
         }
     }
+
 }

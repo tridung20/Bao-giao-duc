@@ -148,40 +148,46 @@
         <p class="text">Ghi rõ nguồn “Báo Lào Cai điện tử” khi sử dụng thông tin trang này.</p>
     </div> -->
   </footer>
-  <div class="modal " data-target="loginModal">
+  <div class="modal" data-target="loginModal">
     <div class="modal-header">
-      <h5 class="modal-title">Kết quả</h5>
+      <h5 class="modal-title">Đăng nhập</h5>
     </div>
     <div class="modal-body scroll ">
-      <div class="d-flex w-650">
+      <div class="d-flex w-500">
         <div class="rank-1">
-          <div class="text-center">Đăng nhập bằng tài khoản VietTimes</div>
+          <!-- <div class="text-center">Đăng nhập bằng tài khoản VietTimes</div> -->
           <div class="form-group">
-            <label for="">Tên tài khoản (email đã đăng ký với VietTimes)</label>
-            <input type="email" class="form-control" placeholder="Nhập email">
+            <p>
+              <span class="name">Email</span>
+              <span class="required">*</span>
+            </p>
+            <input type="email" class="form-control" placeholder="Nhập địa chỉ">
             <small class="feedback">Bạn chưa nhập email.</small>
           </div>
           <div class="form-group">
-            <label for="">Mật khẩu tài khoản</label>
+            <p>
+              <span class="name">Mật khẩu</span>
+              <span class="required">*</span>
+            </p>
             <div class="d-flex">
               <input type="password" class="form-control" placeholder="Nhập mật khẩu">
-              <i class="ic-eye slash"></i>
+              <i class="ic-hide"></i>
             </div>
           </div>
-          <p>Bạn quên mật khẩu? <a href="#" class="forgot-password">Lấy lại mật khẩu</a>
-          </p>
+          <button type="button" class="btn-submit">Đăng nhập</button>
+          <!-- <p>Bạn quên mật khẩu? <a href="#" class="forgot-password">Lấy lại mật khẩu</a></p> -->
         </div>
         <div class="rank-2">
-          <div class="text-center">Đăng nhập nhanh bằng tài khoản mạng xã hội</div>
+          <div class="text-center">Hoặc đăng nhập bằng</div>
           <div class="social">
             <a href="#" class="fb" title="Facebook">
-              <i class="ic-square-facebook"></i>Facebook
+              <i class="ic-facebook"></i>Facebook
             </a>
             <a href="#" class="zl" title="Zalo">
               <i class="ic-zalo"></i>Zalo
             </a>
             <a href="#" class="gg" title="Google">
-              <i class="ic-google"></i>Google
+              <i class="ic-gg"></i>Google
             </a>
           </div>
         </div>
@@ -189,8 +195,7 @@
       </div>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn-close">Đóng</button>
-      <button type="button" class="btn-submit">Đăng nhập</button>
+      <!-- <button type="button" class="btn-close">Đóng</button> -->
     </div>
   </div> <!-- modal login -->
 
